@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS aula_php;
+
+USE aula_php;
+
+CREATE TABLE IF NOT EXISTS produtos (
+    codigo INT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(100) NOT NULL,
+    valor FLOAT NOT NULL,
+    estoque INT NOT NULL,
+);
