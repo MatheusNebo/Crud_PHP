@@ -19,10 +19,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $stmt->execute();
     $stmt->close();
 
-    header("Location: produtos.php");
+    header("Location: /aula_php/CRUD-v1/produtos.php");
     exit;
 }
 
 $conexao->close();
 
-require "form_cadastra_produto.html";
+require "form_cadastra_produto.php";

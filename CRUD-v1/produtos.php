@@ -21,7 +21,6 @@ $resultado = $conexao->query("SELECT * FROM produtos ORDER BY codigo_produto ASC
         <nav class="nav-menu">
             <a href="/../produtos.php" class="nav-link active">📋 Listar Produtos</a>
             <a href="/../usuarios.php" class="nav-link">📋 Listar Usuários</a>
-
             <a href="" class="nav-link">📊 Relatórios (prox passos)</a>
         </nav>
     </header>
@@ -49,7 +48,7 @@ $resultado = $conexao->query("SELECT * FROM produtos ORDER BY codigo_produto ASC
                         </tr>
                     </thead>
                     <tbody>
-                        <?php while ($produto= $resultado->fetch_assoc()): ?>
+                        <?php while ($produto = $resultado->fetch_assoc()): ?>
                         <tr style="border-bottom: 1px solid #eee;">
                             <td style="padding: 12px;"><?php echo $produto['codigo_produto']; ?></td>
                             <td style="padding: 12px;">

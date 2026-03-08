@@ -14,7 +14,7 @@ $resultado = $conexao->query("SELECT * FROM usuarios ORDER BY codigo_usuario ASC
 
 </head>
 <body>
-    <!-- Header com links de navegação -->
+    <!-- header com links de navegação -->
     <header class="header">
         <h1>🔧 Sistema de Gerenciamento de Produtos</h1>
         
@@ -31,10 +31,10 @@ $resultado = $conexao->query("SELECT * FROM usuarios ORDER BY codigo_usuario ASC
         <div class="content-area">
             <div class="content-header">
                 <h2>Lista de Usuários</h2>
-                <a href="/aula_php/CRUD-v1/usuarios/cadastrar.php" class="btn-novo">+ Novo Usuário</a>
+                <a href="/aula_php/CRUD-v1/usuarios/form_cadastra_usuario.php" class="btn-novo">+ Novo Usuário</a>
             </div>
 
-            <!-- conteudo da página (no caso do index a tabela) -->
+            <!-- conteudo da página -->
             <div class="content-body">
                
                 <table style="width: 100%; border-collapse: collapse;">

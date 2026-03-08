@@ -18,4 +18,4 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 $conexao->close();
 
-require "form_cadastra_usuario.html";
+require "form_cadastra_usuario.php";
