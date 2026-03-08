@@ -60,8 +60,8 @@ $resultado = $conexao->query("SELECT * FROM usuarios ORDER BY codigo_usuario ASC
                                 <?php endif; ?>
                             </td>
                             <td style="padding: 12px;">
-                                <a href="/aula_php/CRUD-v1/usuarios/editar.php?codigo_usuario=<?php echo $usuario['codigo_usuario']; ?>" style="color: #3498db; text-decoration: none; margin-right: 10px;">✏️ Editar</a>
-                                <a href="/aula_php/CRUD-v1/usuarios/excluir.php?codigo_usuario=<?php echo $usuario['codigo_usuario']; ?>" 
+                                <a href="/aula_php/CRUD-v1/usuarios/editar_usuario.php?codigo_usuario=<?php echo $usuario['codigo_usuario']; ?>" style="color: #3498db; text-decoration: none; margin-right: 10px;">✏️ Editar</a>
+                                <a href="/aula_php/CRUD-v1/usuarios/excluir_usuario.php?codigo_usuario=<?php echo $usuario['codigo_usuario']; ?>" 
                                    style="color: #e74c3c; text-decoration: none;"
                                    onclick="return confirm('Tem certeza que deseja excluir?')">🗑️ Excluir</a>
                             </td>

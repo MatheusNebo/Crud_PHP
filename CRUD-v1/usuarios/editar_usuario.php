@@ -48,41 +48,5 @@ $usuario = $resultado->fetch_assoc();
 $stmt->close();
 $conexao->close();
 ?>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>Editar Usuário</title>
-</head>
-<body>
-    <h1>Editar Usuário (Código: <?php echo $usuario["codigo_usuario"]; ?>)</h1>
 
-    <?php if ($mensagem): ?>
-        <p><b><?php echo $mensagem; ?></b></p>
-    <?php endif; ?>
-
-    <form method="POST" action="editar.php">
-        <input type="hidden" name="codigo_usuario" value="<?php echo $usuario["codigo_usuario"]; ?>">
-
-        <label>Nome:</label><br>
-        <input type="text" name="nome" value="<?php echo htmlspecialchars($usuario["nome"]); ?>" required><br><br>
-
-        <label>Email:</label><br>
-        <input type="email" name="email" value="<?php echo htmlspecialchars($usuario["email"]); ?>" required><br><br>
-
-        <label>Senha (deixe em branco para manter a atual):</label><br>
-        <input type="password" name="senha"><br><br>
-
-        <label>
-            <input type="checkbox" name="administrador" value="1"
-                <?php echo $usuario["administrador"] ? "checked" : ""; ?>>
-            Administrador
-        </label><br><br>
-
-        <button type="submit">Salvar</button>
-    </form>
-
-    <br>
-    <a href="/aula_php/CRUD-v1/usuarios.php">Voltar para a lista</a>
-</body>
-</html>
+<?php require "form_edita_usuario.php"; ?>

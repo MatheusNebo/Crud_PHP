@@ -50,5 +50,6 @@ if ($resultado->num_rows === 0) {
 $produto = $resultado->fetch_assoc();
 $stmt->close();
 $conexao->close();
+?>
 
-require "form_atualiza.php";
+<?php require "form_atualiza_produto.php"; ?>

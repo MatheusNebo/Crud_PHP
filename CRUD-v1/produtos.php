@@ -62,7 +62,7 @@ $resultado = $conexao->query("SELECT * FROM produtos ORDER BY codigo_produto ASC
                             <td style="padding: 12px;">R$ <?php echo number_format($produto['valor'], 2, ',', '.'); ?></td>
                             <td style="padding: 12px;"><?php echo $produto['estoque']; ?></td>
                             <td style="padding: 12px;">
-                                <a href="/aula_php/CRUD-v1/produtos/atualizar.php?codigo_produto=<?php echo $produto['codigo_produto']; ?>" style="color: #3498db; text-decoration: none; margin-right: 10px;">✏️ Editar</a>
+                                <a href="/aula_php/CRUD-v1/produtos/editar_produto.php?codigo_produto=<?php echo $produto['codigo_produto']; ?>" style="color: #3498db; text-decoration: none; margin-right: 10px;">✏️ Editar</a>
                                 <a href="/aula_php/CRUD-v1/produtos/excluir_produto.php?codigo_produto=<?php echo $produto['codigo_produto']; ?>" 
                                    style="color: #e74c3c; text-decoration: none;"
                                    onclick="return confirm('Tem certeza que deseja excluir?')">🗑️ Excluir</a>
