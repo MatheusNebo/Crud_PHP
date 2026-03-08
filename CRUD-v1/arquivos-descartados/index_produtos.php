@@ -1,5 +1,5 @@
 <?php
-require_once "../conexao.php";
+require_once __DIR__ . "/../conexao.php";
 
 $resultado = $conexao->query("SELECT * FROM produtos ORDER BY codigo_produto ASC");
 ?>

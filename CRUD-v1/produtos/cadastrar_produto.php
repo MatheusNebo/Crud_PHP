@@ -1,5 +1,5 @@
 <?php
-require_once "../conexao.php";
+require_once __DIR__ . "/../conexao.php";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $titulo  = $_POST["titulo"];
@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $stmt->execute();
     $stmt->close();
 
-    header("Location: index_produtos.php");
+    header("Location: produtos.php");
     exit;
 }
 

@@ -17,5 +17,5 @@ $stmt->close();
 
 $conexao->close();
 
-header("Location: index.php");
+header("Location: /aula_php/CRUD-v1/usuarios.php");
 

@@ -4,7 +4,7 @@ require_once "../conexao.php";
 $mensagem = "";
 
 if (!isset($_GET["codigo_usuario"]) && $_SERVER["REQUEST_METHOD"] !== "POST") {
-    header("Location: index.php");
+    header("Location: /aula_php/CRUD-v1/usuarios.php");
     exit;
 }
 
@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     if ($stmt->execute()) {
-        header("Location: index.php");
+        header("Location: /aula_php/CRUD-v1/usuarios.php");
         exit;
     } else {
         $mensagem = "Erro ao atualizar: " . $stmt->error;
@@ -83,6 +83,6 @@ $conexao->close();
     </form>
 
     <br>
-    <a href="index.php">Voltar para a lista</a>
+    <a href="/aula_php/CRUD-v1/usuarios.php">Voltar para a lista</a>
 </body>
 </html>

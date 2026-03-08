@@ -1,14 +1,14 @@
 <?php
-require_once "../conexao.php";
+require_once __DIR__ . "/../conexao.php";
 
 if (!isset($_GET["codigo_produto"]) && $_SERVER["REQUEST_METHOD"] !== "POST") {
-    header("Location: index_produtos.php");
+    header("Location: /aula_php/CRUD-v1/produtos.php"); 
     exit;
 }
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $codigo_produto  = $_POST["codigo_produto"];
-    $titulo          = $_POST["titulo"];
+    $titulo          = $_POST["titulo"] ;
     $valor           = $_POST["valor"];
     $estoque         = $_POST["estoque"];
 
@@ -30,13 +30,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     if ($stmt->execute()) {
-        header("Location: index_produtos.php");
+        header("Location: /aula_php/CRUD-v1/produtos.php");
         exit;
     }
     $stmt->close();
 }
 
-$codigo = $_GET["codigo_produto"];
+$codigo_produto = $_GET["codigo_produto"];
 $stmt   = $conexao->prepare("SELECT * FROM produtos WHERE codigo_produto = ?");
 $stmt->bind_param("i", $codigo_produto);
 $stmt->execute();

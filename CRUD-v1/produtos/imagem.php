@@ -18,6 +18,26 @@ if ($stmt->num_rows === 0) {
     exit;
 }
 
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $maxFileSize = 20 * 1024 * 1024; // 20MB em bytes
+    
+    if (isset($_FILES["imagem"]) && $_FILES["imagem"]["error"] === UPLOAD_ERR_OK) {
+        if ($_FILES["imagem"]["size"] > $maxFileSize) {
+            die("Erro: A imagem excede o limite de 20MB");
+        }
+        
+        // validar tipo de arquivo
+        $allowedTypes = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'];
+        if (!in_array($_FILES["imagem"]["type"], $allowedTypes)) {
+            die("Erro: Tipo de arquivo não permitido. Use apenas imagens (JPEG, PNG, GIF, WEBP)");
+        }
+        
+        $imagem = file_get_contents($_FILES["imagem"]["tmp_name"]);
+        $imagem_tipo = $_FILES["imagem"]["type"];
+    }
+}
+    
+
 $stmt->bind_result($imagem, $imagem_tipo);
 $stmt->fetch();
 

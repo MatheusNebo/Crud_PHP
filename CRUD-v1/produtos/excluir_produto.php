@@ -1,5 +1,5 @@
 <?php
-require_once "../conexao.php";
+require_once __DIR__ . "/../conexao.php";
 
 /*
 if (!isset($_GET["codigo"])) {
@@ -17,5 +17,5 @@ $stmt->close();
 
 $conexao->close();
 
-header("Location: index_produtos.php");
+header("Location: produtos.php");
 

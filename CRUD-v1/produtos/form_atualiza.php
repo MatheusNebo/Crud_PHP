@@ -1,3 +1,6 @@
+<?php
+require_once __DIR__ . "/../conexao.php";
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -46,6 +49,6 @@
     </form>
 
     <br>
-    <a href="index_produtos.php">Voltar para a lista</a>
+    <a href="produtos.php">Voltar para a lista</a>
 </body>
 </html>

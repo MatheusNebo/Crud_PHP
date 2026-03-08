@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $stmt->execute();
     $stmt->close();
 
-    header("Location: index.php");
+    header("Location: /aula_php/CRUD-v1/usuarios.php");
     exit;
 }
 

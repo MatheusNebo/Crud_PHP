@@ -1,0 +1,9 @@
+-add o css e html aos forms de cadastrar e editar
+-arrumar css de botao:active
+-melhorar design de visualização de tabelas (linhas com cores intercaladas)
+-melhorar caminhos dos arquivos (constantes de caminho)
+-add validações no arq. conexao.php
+-add validações dos campos (ex: email com padrao certo, senha com caracteres especiais, números, etc)
+-criptografar senhas ao enviar para o banco (base64 encode basico, aprofundar futuramente)
+-add login (só adms podem editar, cadastrar e excluir qualquer cadastro, usuários podem apenas editar seus próprios perfis)
+
