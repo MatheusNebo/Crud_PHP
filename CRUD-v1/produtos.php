@@ -75,7 +75,7 @@ $resultado = $conexao->query("SELECT * FROM produtos ORDER BY codigo_produto ASC
         </div>
     </main>
 
-    <!-- Footer opcional -->
+    <!-- Footer -->
     <footer style="background-color: #2c3e50; color: white; text-align: center; padding: 1rem; margin-top: auto;">
         <p style="opacity: 0.8;">&copy; 2026 - Sistema CRUD v1.0</p>
     </footer>

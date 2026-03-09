@@ -26,7 +26,7 @@ require_once __DIR__ . "/../conexao.php";
                 <h2>Editar Produto</h2>
             </div>
     
-            <form method="POST" action="atualizar.php" enctype="multipart/form-data">
+            <form method="POST" action="editar_produto.php" enctype="multipart/form-data">
                 <input type="hidden" name="codigo_produto" value="<?php echo htmlspecialchars($produto["codigo_produto"]); ?>">
 
                 <label>Título:</label><br>

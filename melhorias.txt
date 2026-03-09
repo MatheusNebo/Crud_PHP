@@ -1,8 +1,8 @@
+-melhorar caminhos dos arquivos (constantes de caminho)
 -add o css e html aos forms de cadastrar e editar CONCLUÍDO
 -arrumar css de botao:active
 -melhorar design de visualização de tabelas (linhas com cores intercaladas)
 -arrumar o content-area (a div não atualiza seu tamanho após excluir um cadastro)
--melhorar caminhos dos arquivos (constantes de caminho)
 -add validações no arq. conexao.php
 -add validações dos campos (ex: email com padrao certo, senha com caracteres especiais, números, etc)
 -criptografar senhas ao enviar para o banco (base64 encode basico, aprofundar futuramente)

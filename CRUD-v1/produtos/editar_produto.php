@@ -52,4 +52,4 @@ $stmt->close();
 $conexao->close();
 ?>
 
-<?php require "form_atualiza_produto.php"; ?>
+<?php require "form_edita_produto.php"; ?>
