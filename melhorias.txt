@@ -1,10 +1,11 @@
--melhorar caminhos dos arquivos (constantes de caminho)
 -add o css e html aos forms de cadastrar e editar CONCLUÍDO
+-add as todas as funções de relatorio ao php/html
+-melhorar caminhos dos arquivos (constantes de caminho)
 -arrumar css de botao:active
 -melhorar design de visualização de tabelas (linhas com cores intercaladas)
 -arrumar o content-area (a div não atualiza seu tamanho após excluir um cadastro)
--add validações no arq. conexao.php
--add validações dos campos (ex: email com padrao certo, senha com caracteres especiais, números, etc)
+-add validações no arquivo conexao.php
+-add validações dos campos (ex: email com padrão certo, senha com caracteres especiais, números, etc)
 -criptografar senhas ao enviar para o banco (base64 encode basico, aprofundar futuramente)
 -add login (só adms podem editar, cadastrar e excluir qualquer cadastro, usuários podem apenas editar seus próprios perfis)
--criar nova versao usando classes para as funções do crud, conexao etc
+-criar nova versao usando classes e módulos para as funções do crud, conexao, frontend, etc (POO)
