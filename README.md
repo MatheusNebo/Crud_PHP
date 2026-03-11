@@ -15,12 +15,12 @@ Sistema de controle de vendas em desenvolvimento para aprimorar conhecimentos em
 - Página de dashboard com relatório de vendas do mês
 - Listagem básica de usuários
 - Listagem básica de produtos
-- Funções de consulta prontas
+- Funções de exemplo de consulta prontas
 
 ## Próximos passos
 - CRUD de clientes
 - CRUD de vendas
 - Relatório de vendas por período
-- Importação de produtos via CSV
+- Importação e exportação de outras tabelas para CSV (atualmente possui apenas de produtos)
 - Autenticação de usuários
 - Nova versão refatorada utilizando POO, sanitizações e validações mais consistentes

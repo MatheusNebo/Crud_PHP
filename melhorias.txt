@@ -1,5 +1,6 @@
 -add o css e html aos forms de cadastrar e editar CONCLUÍDO
--add as todas as funções de relatorio ao php/html
+-add exportação e importação de dados de outras tabelas (possui apenas da tabela produtos)
+-add todas as funções de relatorio ao php/html
 -melhorar caminhos dos arquivos (constantes de caminho)
 -arrumar css de botao:active
 -melhorar design de visualização de tabelas (linhas com cores intercaladas)

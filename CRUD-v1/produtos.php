@@ -19,9 +19,9 @@ $resultado = $conexao->query("SELECT * FROM produtos ORDER BY codigo_produto ASC
         <h1>🔧 Sistema de Gerenciamento de Produtos</h1>
         
         <nav class="nav-menu">
-            <a href="/../produtos.php" class="nav-link active">📋 Listar Produtos</a>
-            <a href="/../usuarios.php" class="nav-link">📋 Listar Usuários</a>
-            <a href="" class="nav-link">📊 Relatórios (prox passos)</a>
+            <a href="/aula_php/CRUD-v1/produtos.php" class="nav-link active">📋 Listar Produtos</a>
+            <a href="/aula_php/CRUD-v1/usuarios.php" class="nav-link">📋 Listar Usuários</a>
+            <a href="/aula_php/CRUD-v1/relatorios/importar_csv.php" class="nav-link">📊 Relatórios (prox passos)</a>
         </nav>
     </header>
 
